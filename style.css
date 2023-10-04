@@ -1,8 +1,8 @@
 body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px 100px ;
-    gap: 5px;
+    grid-template-rows: 100px 100px auto ;
+    gap: 7px;
 }
 
 #logga{
@@ -29,29 +29,32 @@ header{
 }
 
 nav{
-    grid-column: 2 / 4;
+    grid-column: 2 / 5;
     grid-row: 2;
     border: 2px solid black;
-    height: 100px;
+   
 }
 
 main{
     grid-column: 2 / 4;
-    grid-row: 3 / 5;
-    text-align:center;  
-    text-align: justify;
-    padding-right: 80px;
+    grid-row: 3 / 4;
     background-color: black;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+    display: grid;
 }
 
 footer{
-    grid-column: 2 /span 5;
-    grid-row: 5;
+    grid-column: 2 /4;
+    grid-row: 4;
     height: 100px;
+
 }
 
 .logo, aside, header, nav, main, footer{
     border: 2px solid black;
+    border-radius: 4px;
 }
 
 footer,nav,header,a{
@@ -62,4 +65,9 @@ footer,nav,header,a{
 
 a{
     margin: 40px;
+}
+
+.album{
+    height: auto;
+    width: 80%;
 }
